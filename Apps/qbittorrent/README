@@ -1,0 +1,5 @@
+# qBitTorrent v-app
+
+Configure ./volumes/home/Downloads & ./volumes/home/Torrents on GUI to be the directories for Downloads and Torrents.
+
+You can also set the home from the Shared volumes at the root of v-app. It's up to you to have different homes or shared.

@@ -1,0 +1,3 @@
+volumes/home/.*
+volumes/home/Downloads/*[!.gitkeep]
+volumes/home/Torrents/*[!.gitkeep]

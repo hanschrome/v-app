@@ -1,0 +1,31 @@
+#!/bin/bash
+
+appDir="./Apps"
+
+show_help () {
+    cat <<- EOF
+        usage: ./run [app]
+        List of apps:
+$(ls $appDir)
+EOF
+}
+
+if [ $# -eq 0 ]
+    then
+    show_help
+    exit
+fi
+
+app=$1
+
+if [ -d "$appDir/$app" ]
+    then
+    cd "$appDir/$app"
+    if [ ! -f "installed" ]
+        then
+        ./build
+    fi
+    ./run
+else
+    echo "The app '$app' does not exist."
+fi
