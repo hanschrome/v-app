@@ -4,4 +4,8 @@ docker run -ti -d -m=8g --rm \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        -v $(realpath $(pwd)/../..)/Shared/volumes/home:/home/developer \
+       --device /dev/snd \
+       -v ~/.config/pulse:/home/developer/.config/pulse \
+       -v /run/user/$UID/pulse/native:/run/user/$UID/pulse/native \
+       --env PULSE_SERVER=unix:/run/user/$UID/pulse/native \
        google-chrome-stable

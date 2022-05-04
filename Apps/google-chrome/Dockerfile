@@ -8,7 +8,7 @@ RUN apt install fonts-liberation libasound2 libatk-bridge2.0-0 libatk1.0-0 libat
 RUN apt install wget -y
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN dpkg -i google-chrome-stable_current_amd64.deb
-RUN apt install sudo -y
+RUN apt install sudo pulseaudio libpulse0 libasound2 libasound2-plugins -y
 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
