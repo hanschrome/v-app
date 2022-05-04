@@ -21,4 +21,4 @@ RUN export uid=1000 gid=1000 && \
 USER developer
 ENV HOME /home/developer
 
-CMD /usr/bin/google-chrome-stable --no-sandbox
+CMD /usr/bin/google-chrome-stable --no-sandbox --disable-dev-shm-usage
