@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y sudo software-properties-common && add-
     export LC_ALL=en_US.UTF-8 export LANG=en_US.UTF-8 && apt-get update && \
     apt-get install -y software-properties-common wget git curl && \
     apt-get update && \
-    apt-get install -y --allow-unauthenticated graphviz phpunit php7.1-cli php7.1-dev openjdk-8-jre libxext-dev libxrender-dev libxtst-dev && \
+    apt-get install -y --allow-unauthenticated firefox graphviz phpunit php7.1-cli php7.1-dev openjdk-8-jre libxext-dev libxrender-dev libxtst-dev libxss1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
