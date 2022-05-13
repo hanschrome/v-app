@@ -54,9 +54,7 @@ Being the launchers bash scripting, you can write the command on a Launcher and 
  
 ## Just use docker-compose tho
 
-In fact, it will be needed for apps which needs some hardware like Firefox with the camera, but it will be
- inside the app directory. It's important to keep each v-app individual, so in the future to add an app could be
- like ´git clone [url] Apps/[app]´.
+It's important to keep each v-app individual, so in the future to add an app could be like ´git clone [url] Apps/[app]´.
 
 ## Versioning
 
