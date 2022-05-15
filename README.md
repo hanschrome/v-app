@@ -39,6 +39,7 @@ Reload .bashrc (. .bashrc), reload sxhkd (you should create a .conf file on serv
 
 Easy! you got your Rofi launcher with v-app running. All your apps are now running under virtual environments.
 
+![Screenshot of menu listing only the apps](https://github.com/hanschrome/v-app/blob/main/docs/screenshots/dmenu-rofi.png?raw=true)
 
 ## Why
 
