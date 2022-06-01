@@ -9,6 +9,7 @@ RUN apt install wget -y
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN dpkg -i google-chrome-stable_current_amd64.deb
 RUN apt install sudo pulseaudio libpulse0 libasound2 libasound2-plugins -y
+RUN apt install -y alsa-base alsa-utils
 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \

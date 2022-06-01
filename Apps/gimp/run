@@ -3,4 +3,5 @@
 docker run -it -d -e DISPLAY=$DISPLAY --net=host \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        -v $(realpath $(pwd)/../..)/Shared/volumes/home:/home/developer \
+       --name Gimp \
        gimp

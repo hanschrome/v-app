@@ -4,5 +4,6 @@ docker run -ti -d --rm \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        -v $(realpath $(pwd)/../..)/Shared/volumes/home:/home/developer \
+       --name Nautilus \ 
        nautilus
 
