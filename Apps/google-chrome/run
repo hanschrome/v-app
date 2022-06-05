@@ -8,6 +8,5 @@ docker run -ti -d -m=8g --rm \
        -v ~/.config/pulse:/home/developer/.config/pulse \
        -v /run/user/$UID/pulse/native:/run/user/$UID/pulse/native \
        --env PULSE_SERVER=unix:/run/user/$UID/pulse/native \
-       --network developer-net \
        --name Google-Chrome \
        google-chrome-stable
