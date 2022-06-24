@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd ~/v-app && ./v-app obs-studio
