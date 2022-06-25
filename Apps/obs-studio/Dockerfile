@@ -1,6 +1,5 @@
 FROM ubuntu:20.04
 
-RUN echo 'force'
 ENV TZ=Europe/Madrid
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt update -y
