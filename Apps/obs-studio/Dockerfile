@@ -9,7 +9,6 @@ RUN apt install fonts-liberation libasound2 libatk-bridge2.0-0 libatk1.0-0 libat
 RUN apt install wget -y
 RUN apt install sudo pulseaudio libpulse0 libasound2 libasound2-plugins -y
 RUN apt install -y alsa-base alsa-utils
-
 RUN apt install -y ffmpeg
 
 RUN apt install obs-studio -y
